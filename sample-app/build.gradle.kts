@@ -25,6 +25,7 @@ kotlin {
 }
 
 dependencies {
-    // This is a separate APK consuming the same binary AAR SDK module.
-    implementation(project(":hinge-angle-sdk"))
+    // Prove the public Maven AAR works without any local project dependency.
+    // No GitHub token, ADB API, or signing credential is required.
+    implementation("com.mentoster:flip7-hinge-sdk:0.1.0")
 }

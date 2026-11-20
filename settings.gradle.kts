@@ -12,6 +12,8 @@ dependencyResolutionManagement {
         google()
         mavenCentral()
         maven("https://jitpack.io")
+        // Public SDK binary repository. Required by the independent sample APK.
+        maven("https://raw.githubusercontent.com/mentoster/flip7-angle-lab/maven")
     }
 }
 
