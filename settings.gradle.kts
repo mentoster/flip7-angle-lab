@@ -17,3 +17,5 @@ dependencyResolutionManagement {
 
 rootProject.name = "Flip7AngleLab"
 include(":app")
+include(":hinge-angle-sdk")
+include(":sample-app")

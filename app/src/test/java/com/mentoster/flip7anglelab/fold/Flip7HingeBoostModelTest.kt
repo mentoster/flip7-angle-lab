@@ -8,7 +8,7 @@ import org.junit.Test
 
 class Flip7HingeBoostModelTest {
     private fun loadModel(): Flip7HingeBoostModel =
-        File("src/main/assets/${Flip7HingeBoostModel.ASSET_NAME}")
+        File("../hinge-angle-sdk/src/main/assets/${Flip7HingeBoostModel.ASSET_NAME}")
             .inputStream().use(Flip7HingeBoostModel::load)
 
     @Test

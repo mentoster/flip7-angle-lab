@@ -18,6 +18,8 @@ angle **without requiring ADB for everyday use**.
 
 **[Research](#research-question) · [Quick start](#quick-start) · [How it works](#how-it-works) · [Results](#research-results) · [Methodology](docs/research-methodology.md) · [License](#license)**
 
+**[Android SDK for other apps — Maven / AAR](docs/sdk.md)**
+
 <sub>Built and tested on Samsung Galaxy Z Flip7 · SM-F766B</sub>
 
 </div>
@@ -148,6 +150,21 @@ see the [full research methodology](docs/research-methodology.md).
 
 ## Quick start
 
+### Use the model inside your own APK
+
+The pretrained model, rotation guard and stabilizer are packaged in
+**[`hinge-angle-sdk`](docs/sdk.md)**. Add this dependency to another
+Kotlin/Java Android app (no ADB required):
+
+```kotlin
+implementation("com.mentoster:flip7-hinge-sdk:0.1.0")
+```
+
+See [Gradle repository setup, a complete lifecycle-aware example and
+the separately tested demo APK](docs/sdk.md). The downloadable AAR
+includes the ready-to-use Boost v2 model; API events explicitly
+distinguish new estimates from held readings during rotation.
+
 ### Just want to try it?
 
 **[Download the signed experimental APK from GitHub Releases](https://github.com/mentoster/flip7-angle-lab/releases/latest)**,
@@ -224,7 +241,7 @@ The primary offline model is a **gradient-boosted ensemble of 120 small
 regression trees**, trained on 1,500 Samsung-labeled Flip7 sensor measurements
 covering different hinge angles and 33 quantized gravity-pose groups.
 The serialized weights/thresholds are included as
-[`flip7_hinge_boost_v2.b64`](app/src/main/assets/flip7_hinge_boost_v2.b64)
+[`flip7_hinge_boost_v2.b64`](hinge-angle-sdk/src/main/assets/flip7_hinge_boost_v2.b64)
 (about 49 KB Base64 / 36.4 KB compressed). The previous v1 artifact
 is retained for reproducibility. This is a **trained model
 artifact**, not a raw training dataset or a saved list of labeled examples.
@@ -493,7 +510,7 @@ The script performs grouped gravity-pose validation, trains the model and
 checks the serialized tree predictions against scikit-learn. The Base64
 between `MODEL_BASE64_START` and `MODEL_BASE64_END` is the *model*,
 not the underlying sensor rows; it can replace the bundled
-`app/src/main/assets/flip7_hinge_boost_v2.b64` after review and versioning.
+`hinge-angle-sdk/src/main/assets/flip7_hinge_boost_v2.b64` after review and versioning.
 No raw data needs to be included in the public Git repository or GitHub
 Releases. The tiny model asset itself is tracked in Git and can optionally
 be attached to a GitHub Release for standalone consumption.

@@ -12,7 +12,7 @@ import kotlin.math.max
  * - A brief adaptive-source grace period avoids jumping to an inaccurate
  *   offline MLP on a single missing nearest-neighbor match.
  */
-internal class AngleEstimateStabilizer {
+class AngleEstimateStabilizer {
     data class Result(
         val angle: Float?,
         val adaptive: Boolean,

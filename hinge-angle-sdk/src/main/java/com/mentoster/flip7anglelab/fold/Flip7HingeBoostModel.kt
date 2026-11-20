@@ -17,7 +17,7 @@ import kotlin.math.sqrt
  * The model runs with public Android sensors, offline, without ADB, Python
  * or a neural-network runtime. Validation is specific to one Galaxy Z Flip7.
  */
-internal class Flip7HingeBoostModel private constructor(
+class Flip7HingeBoostModel private constructor(
     private val baseline: Double,
     private val trees: List<Array<Node>>,
 ) {

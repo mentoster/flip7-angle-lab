@@ -18,7 +18,7 @@ import kotlin.math.sqrt
  * angle simply because a timer expires. No privileged angle or Samsung
  * READ_LOGS access is used by this guard.
  */
-internal class OrientationMotionGuard {
+class OrientationMotionGuard {
     data class Output(
         val angle: Float?,
         val held: Boolean,
