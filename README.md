@@ -62,7 +62,10 @@ validation protocol, assumptions, failure cases and reproducibility.
 
 ### Research results
 
-All errors are in **degrees**, not accuracy guarantees:
+All errors are in **degrees**, not accuracy guarantees.
+The table below preserves the earlier deployed-v2 training snapshot;
+the visualizations below use an **updated 1,500-row calibration snapshot**
+and explicitly distinguish a *retrained recipe* from fixed APK weights:
 
 | Experiment | MAE | P90 absolute error |
 | --- | ---: | ---: |
@@ -76,6 +79,61 @@ strategies; the rows are **not** interchangeable head-to-head rankings.
 Cross-session magnetic shift also caused substantially larger errors.
 The public repository includes **portable trained model weights**, but
 does **not** publish private, device-recorded training CSVs.
+
+### Visual experiments
+
+The charts are native, inspectable **SVG files** backed by
+[aggregated benchmark data](docs/data/aggregate-metrics-2026-11-20.json).
+They show evidence, including negative results, rather than implying
+manufacturer-grade accuracy.
+
+#### Error is not uniform across the hinge
+
+![MAE and 90th-percentile model errors across nine hinge-angle groups](docs/charts/error-by-angle.svg)
+
+On the updated 1,500-label snapshot, rerunning the Boost v2 **training
+recipe** on three grouped holdouts produced **MAE 6.69° / P90 15.89°**
+across **1,030 predictions** (43 gravity-pose groups). This is **not**
+a held-out audit of the fixed, pre-bundled APK weights, and the 0–20°
+error group has only four held-out predictions.
+
+#### The direction of the whole phone matters
+
+![Held-out phone-orientation errors for each of six orientations](docs/charts/orientation-holdout.svg)
+
+The six-orientation archive was evaluated by excluding each entire
+orientation from model training and predicting it. Landscape-right and
+face-down were particularly difficult. These are still measurements
+from one capture session on one physical device.
+
+#### What simpler sensor features lose
+
+![Benchmark of orientation-invariant and orientation-sensitive input feature sets](docs/charts/feature-ablation.svg)
+
+Using only magnetic field magnitude avoids some dependence on XYZ
+orientation, but its predictive errors are larger. This experiment
+uses a controlled **100-tree comparison model** on archived data,
+not the fixed 120-tree model in the APK.
+
+#### Why one session's calibration is not enough
+
+![Histogram showing magnetic-magnitude distribution shifted between old and recent sessions](docs/charts/magnetic-domain-shift.svg)
+
+Even at a similar fully-open angle, the measured magnetic magnitude
+distribution shifted dramatically between two capture sessions. This
+helps explain failures of both naive magnitude-only and XYZ models
+when the magnetic environment changes.
+
+#### Coverage of the angles used for calibration
+
+![Counts of calibration examples for each 20-degree hinge-angle interval](docs/charts/label-coverage.svg)
+
+The distribution is not uniform: near-closed positions are
+underrepresented. These numbers are **aggregates only**; no private
+sensor rows, timestamps or pairing details are published.
+
+For the validation protocol, per-split metrics, JSON data and caveats,
+see the [full research methodology](docs/research-methodology.md).
 
 ### What you can do
 
@@ -92,7 +150,8 @@ does **not** publish private, device-recorded training CSVs.
 
 ### Just want to try it?
 
-Build the APK below, or install one you already built. Open **Flip7 Angle Lab**
+**[Download the signed experimental APK from GitHub Releases](https://github.com/mentoster/flip7-angle-lab/releases/latest)**,
+build the APK below, or install one you already built. Open **Flip7 Angle Lab**
 on a Galaxy Z Flip7. The built-in model can immediately estimate the hinge
 angle using ordinary Android sensors:
 
@@ -102,6 +161,13 @@ angle using ordinary Android sensors:
 
 No root, cloud inference, or external model server is required for the
 offline prediction path.
+
+> **Android signing:** the release APK is signed with a dedicated,
+> persistent release key, different from the local Android debug key.
+> If you previously installed a debug build with the same package name,
+> Android will not let you install the release APK over it. Back up any
+> local calibration first; uninstalling an app normally deletes its
+> private learned samples.
 
 ### Build from source
 

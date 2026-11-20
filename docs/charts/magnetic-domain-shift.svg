@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1024" height="484" viewBox="0 0 1024 484" role="img" aria-label="Magnetic fingerprints changed between sessions — Physically near-open (Samsung 174–180°) · 50 µT buckets · frequency normalized per session">
+<rect x="0" y="0" width="1024" height="484" fill="#0c1625" rx="22"/>
+<rect x="36" y="31" width="7" height="48" fill="#44dfc3" rx="3"/>
+<text x="59" y="54" fill="#f0f5fc" font-size="25" font-family="Arial, Helvetica, sans-serif" font-weight="700" text-anchor="start">Magnetic fingerprints changed between sessions</text>
+<text x="59" y="80" fill="#9db0c7" font-size="14" font-family="Arial, Helvetica, sans-serif" font-weight="400" text-anchor="start">Physically near-open (Samsung 174–180°) · 50 µT buckets · frequency normalized per session</text>
+<line x1="100" y1="363" x2="963" y2="363" stroke="#334155" stroke-width="1"/>
+<text x="87" y="367" fill="#92a6bc" font-size="13" font-family="Arial, Helvetica, sans-serif" font-weight="400" text-anchor="end">0%</text>
+<line x1="100" y1="284.25" x2="963" y2="284.25" stroke="#334155" stroke-width="1"/>
+<text x="87" y="288.25" fill="#92a6bc" font-size="13" font-family="Arial, Helvetica, sans-serif" font-weight="400" text-anchor="end">25%</text>
+<line x1="100" y1="205.5" x2="963" y2="205.5" stroke="#334155" stroke-width="1"/>
+<text x="87" y="209.5" fill="#92a6bc" font-size="13" font-family="Arial, Helvetica, sans-serif" font-weight="400" text-anchor="end">50%</text>
+<line x1="100" y1="126.75" x2="963" y2="126.75" stroke="#334155" stroke-width="1"/>
+<text x="87" y="130.75" fill="#92a6bc" font-size="13" font-family="Arial, Helvetica, sans-serif" font-weight="400" text-anchor="end">75%</text>
+<text x="132" y="390" fill="#a6bad0" font-size="13" font-family="Arial, Helvetica, sans-serif" font-weight="400" text-anchor="middle">0</text>
+<rect x="277" y="268.8841463414634" width="21" height="94.11585365853658" fill="#45e0c3" rx="3"/>
+<text x="276" y="390" fill="#a6bad0" font-size="13" font-family="Arial, Helvetica, sans-serif" font-weight="400" text-anchor="middle">100</text>
+<rect x="349" y="188.21341463414635" width="21" height="174.78658536585365" fill="#45e0c3" rx="3"/>
+<rect x="421" y="316.9024390243902" width="21" height="46.09756097560975" fill="#45e0c3" rx="3"/>
+<text x="420" y="390" fill="#a6bad0" font-size="13" font-family="Arial, Helvetica, sans-serif" font-weight="400" text-anchor="middle">200</text>
+<rect x="543" y="360.1621621621622" width="21" height="2.8378378378378377" fill="#ffb16b" rx="3"/>
+<text x="564" y="390" fill="#a6bad0" font-size="13" font-family="Arial, Helvetica, sans-serif" font-weight="400" text-anchor="middle">300</text>
+<rect x="615" y="263.6756756756757" width="21" height="99.32432432432432" fill="#ffb16b" rx="3"/>
+<rect x="687" y="150.1621621621622" width="21" height="212.8378378378378" fill="#ffb16b" rx="3"/>
+<text x="708" y="390" fill="#a6bad0" font-size="13" font-family="Arial, Helvetica, sans-serif" font-weight="400" text-anchor="middle">400</text>
+<text x="852" y="390" fill="#a6bad0" font-size="13" font-family="Arial, Helvetica, sans-serif" font-weight="400" text-anchor="middle">500</text>
+<text x="927" y="390" fill="#cddcf0" font-size="13" font-family="Arial, Helvetica, sans-serif" font-weight="400" text-anchor="start">µT</text>
+<rect x="561" y="99" width="15" height="9" fill="#ffb16b" rx="3"/>
+<text x="583" y="108" fill="#ffcb97" font-size="13" font-family="Arial, Helvetica, sans-serif" font-weight="400" text-anchor="start">Archive · median 406 µT (n=333)</text>
+<rect x="561" y="120" width="15" height="9" fill="#45e0c3" rx="3"/>
+<text x="583" y="130" fill="#8df3dc" font-size="13" font-family="Arial, Helvetica, sans-serif" font-weight="400" text-anchor="start">Recent · median 172 µT (n=164)</text>
+<line x1="45" y1="433" x2="979" y2="433" stroke="#233349" stroke-width="1"/>
+<text x="51" y="457" fill="#9aacbf" font-size="13" font-family="Arial, Helvetica, sans-serif" font-weight="400" text-anchor="start">The large domain shift makes single-session magnetic models fragile, even at a similar hinge angle.</text>
+</svg>

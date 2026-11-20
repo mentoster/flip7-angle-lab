@@ -1,0 +1,44 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1024" height="484" viewBox="0 0 1024 484" role="img" aria-label="How calibration labels cover the 0–180° range — 1,500 latest device-local labeled rows · bins include 180° in the final group">
+<rect x="0" y="0" width="1024" height="484" fill="#0c1625" rx="22"/>
+<rect x="36" y="31" width="7" height="48" fill="#44dfc3" rx="3"/>
+<text x="59" y="54" fill="#f0f5fc" font-size="25" font-family="Arial, Helvetica, sans-serif" font-weight="700" text-anchor="start">How calibration labels cover the 0–180° range</text>
+<text x="59" y="80" fill="#9db0c7" font-size="14" font-family="Arial, Helvetica, sans-serif" font-weight="400" text-anchor="start">1,500 latest device-local labeled rows · bins include 180° in the final group</text>
+<line x1="100" y1="366" x2="957" y2="366" stroke="#334155" stroke-width="1"/>
+<text x="85" y="371" fill="#94a8c2" font-size="13" font-family="Arial, Helvetica, sans-serif" font-weight="400" text-anchor="end">0</text>
+<line x1="100" y1="293" x2="957" y2="293" stroke="#334155" stroke-width="1"/>
+<text x="85" y="298" fill="#94a8c2" font-size="13" font-family="Arial, Helvetica, sans-serif" font-weight="400" text-anchor="end">100</text>
+<line x1="100" y1="220" x2="957" y2="220" stroke="#334155" stroke-width="1"/>
+<text x="85" y="225" fill="#94a8c2" font-size="13" font-family="Arial, Helvetica, sans-serif" font-weight="400" text-anchor="end">200</text>
+<line x1="100" y1="147" x2="957" y2="147" stroke="#334155" stroke-width="1"/>
+<text x="85" y="152" fill="#94a8c2" font-size="13" font-family="Arial, Helvetica, sans-serif" font-weight="400" text-anchor="end">300</text>
+<rect x="133" y="344.8" width="54" height="21.2" fill="#ffb16b" rx="6"/>
+<text x="160" y="334.8" fill="#ebf4ff" font-size="14" font-family="Arial, Helvetica, sans-serif" font-weight="700" text-anchor="middle">29</text>
+<text x="160" y="391" fill="#bccde2" font-size="13" font-family="Arial, Helvetica, sans-serif" font-weight="400" text-anchor="middle">0-20</text>
+<rect x="224" y="256.5" width="54" height="109.5" fill="#45e0c3" rx="6"/>
+<text x="251" y="246.5" fill="#ebf4ff" font-size="14" font-family="Arial, Helvetica, sans-serif" font-weight="700" text-anchor="middle">150</text>
+<text x="251" y="391" fill="#bccde2" font-size="13" font-family="Arial, Helvetica, sans-serif" font-weight="400" text-anchor="middle">20-40</text>
+<rect x="315" y="258.7" width="54" height="107.3" fill="#45e0c3" rx="6"/>
+<text x="342" y="248.7" fill="#ebf4ff" font-size="14" font-family="Arial, Helvetica, sans-serif" font-weight="700" text-anchor="middle">147</text>
+<text x="342" y="391" fill="#bccde2" font-size="13" font-family="Arial, Helvetica, sans-serif" font-weight="400" text-anchor="middle">40-60</text>
+<rect x="406" y="249.9" width="54" height="116.1" fill="#45e0c3" rx="6"/>
+<text x="433" y="239.9" fill="#ebf4ff" font-size="14" font-family="Arial, Helvetica, sans-serif" font-weight="700" text-anchor="middle">159</text>
+<text x="433" y="391" fill="#bccde2" font-size="13" font-family="Arial, Helvetica, sans-serif" font-weight="400" text-anchor="middle">60-80</text>
+<rect x="497" y="248.5" width="54" height="117.5" fill="#45e0c3" rx="6"/>
+<text x="524" y="238.5" fill="#ebf4ff" font-size="14" font-family="Arial, Helvetica, sans-serif" font-weight="700" text-anchor="middle">161</text>
+<text x="524" y="391" fill="#bccde2" font-size="13" font-family="Arial, Helvetica, sans-serif" font-weight="400" text-anchor="middle">80-100</text>
+<rect x="588" y="181.3" width="54" height="184.7" fill="#45e0c3" rx="6"/>
+<text x="615" y="171.3" fill="#ebf4ff" font-size="14" font-family="Arial, Helvetica, sans-serif" font-weight="700" text-anchor="middle">253</text>
+<text x="615" y="391" fill="#bccde2" font-size="13" font-family="Arial, Helvetica, sans-serif" font-weight="400" text-anchor="middle">100-120</text>
+<rect x="679" y="258.7" width="54" height="107.3" fill="#45e0c3" rx="6"/>
+<text x="706" y="248.7" fill="#ebf4ff" font-size="14" font-family="Arial, Helvetica, sans-serif" font-weight="700" text-anchor="middle">147</text>
+<text x="706" y="391" fill="#bccde2" font-size="13" font-family="Arial, Helvetica, sans-serif" font-weight="400" text-anchor="middle">120-140</text>
+<rect x="770" y="248.5" width="54" height="117.5" fill="#45e0c3" rx="6"/>
+<text x="797" y="238.5" fill="#ebf4ff" font-size="14" font-family="Arial, Helvetica, sans-serif" font-weight="700" text-anchor="middle">161</text>
+<text x="797" y="391" fill="#bccde2" font-size="13" font-family="Arial, Helvetica, sans-serif" font-weight="400" text-anchor="middle">140-160</text>
+<rect x="861" y="152.1" width="54" height="213.9" fill="#45e0c3" rx="6"/>
+<text x="888" y="142.1" fill="#ebf4ff" font-size="14" font-family="Arial, Helvetica, sans-serif" font-weight="700" text-anchor="middle">293</text>
+<text x="888" y="391" fill="#bccde2" font-size="13" font-family="Arial, Helvetica, sans-serif" font-weight="400" text-anchor="middle">160-180</text>
+<text x="54" y="143" fill="#8da2ba" font-size="12" font-family="Arial, Helvetica, sans-serif" font-weight="400" text-anchor="start">Rows</text>
+<line x1="45" y1="433" x2="979" y2="433" stroke="#233349" stroke-width="1"/>
+<text x="51" y="457" fill="#9aacbf" font-size="13" font-family="Arial, Helvetica, sans-serif" font-weight="400" text-anchor="start">Sparse near-closed examples and uneven angle coverage bias model training and evaluation.</text>
+</svg>

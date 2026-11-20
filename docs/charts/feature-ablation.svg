@@ -1,0 +1,35 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1024" height="484" viewBox="0 0 1024 484" role="img" aria-label="Rotation-invariant features lose accuracy — Archived six-orientation leave-one-out · 100-tree comparison, not bundled model">
+<rect x="0" y="0" width="1024" height="484" fill="#0c1625" rx="22"/>
+<rect x="36" y="31" width="7" height="48" fill="#44dfc3" rx="3"/>
+<text x="59" y="54" fill="#f0f5fc" font-size="25" font-family="Arial, Helvetica, sans-serif" font-weight="700" text-anchor="start">Rotation-invariant features lose accuracy</text>
+<text x="59" y="80" fill="#9db0c7" font-size="14" font-family="Arial, Helvetica, sans-serif" font-weight="400" text-anchor="start">Archived six-orientation leave-one-out · 100-tree comparison, not bundled model</text>
+<rect x="727" y="92" width="17" height="7" fill="#45e0c3" rx="3"/>
+<text x="752" y="103" fill="#d2deee" font-size="13" font-family="Arial, Helvetica, sans-serif" font-weight="400" text-anchor="start">MAE</text>
+<rect x="814" y="92" width="17" height="7" fill="#ffb16b" rx="3"/>
+<text x="840" y="103" fill="#d2deee" font-size="13" font-family="Arial, Helvetica, sans-serif" font-weight="400" text-anchor="start">P90</text>
+<line x1="368" y1="128" x2="368" y2="423" stroke="#334155" stroke-width="1"/>
+<text x="368" y="445" fill="#92a8c4" font-size="13" font-family="Arial, Helvetica, sans-serif" font-weight="400" text-anchor="middle">0°</text>
+<line x1="528" y1="128" x2="528" y2="423" stroke="#334155" stroke-width="1"/>
+<text x="528" y="445" fill="#92a8c4" font-size="13" font-family="Arial, Helvetica, sans-serif" font-weight="400" text-anchor="middle">20°</text>
+<line x1="688" y1="128" x2="688" y2="423" stroke="#334155" stroke-width="1"/>
+<text x="688" y="445" fill="#92a8c4" font-size="13" font-family="Arial, Helvetica, sans-serif" font-weight="400" text-anchor="middle">40°</text>
+<line x1="848" y1="128" x2="848" y2="423" stroke="#334155" stroke-width="1"/>
+<text x="848" y="445" fill="#92a8c4" font-size="13" font-family="Arial, Helvetica, sans-serif" font-weight="400" text-anchor="middle">60°</text>
+<text x="54" y="177" fill="#dbe8f8" font-size="17" font-family="Arial, Helvetica, sans-serif" font-weight="600" text-anchor="start">Magnitude + coarse hinge</text>
+<rect x="368" y="158" width="183.04" height="18" fill="#45e0c3" rx="4"/>
+<rect x="368" y="187" width="471.04" height="13" fill="#ffb16b" rx="3"/>
+<text x="559.04" y="173" fill="#9affdf" font-size="13" font-family="Arial, Helvetica, sans-serif" font-weight="400" text-anchor="start">22.88°</text>
+<text x="847.04" y="199" fill="#ffbd82" font-size="13" font-family="Arial, Helvetica, sans-serif" font-weight="400" text-anchor="start">58.88°</text>
+<text x="54" y="267" fill="#dbe8f8" font-size="17" font-family="Arial, Helvetica, sans-serif" font-weight="600" text-anchor="start">Magnitude + gravity relative</text>
+<rect x="368" y="248" width="141.28" height="18" fill="#45e0c3" rx="4"/>
+<rect x="368" y="277" width="361.12" height="13" fill="#ffb16b" rx="3"/>
+<text x="517.28" y="263" fill="#9affdf" font-size="13" font-family="Arial, Helvetica, sans-serif" font-weight="400" text-anchor="start">17.66°</text>
+<text x="737.12" y="289" fill="#ffbd82" font-size="13" font-family="Arial, Helvetica, sans-serif" font-weight="400" text-anchor="start">45.14°</text>
+<text x="54" y="357" fill="#dbe8f8" font-size="17" font-family="Arial, Helvetica, sans-serif" font-weight="600" text-anchor="start">Full XYZ / gravity features</text>
+<rect x="368" y="338" width="82.88" height="18" fill="#45e0c3" rx="4"/>
+<rect x="368" y="367" width="224.88" height="13" fill="#ffb16b" rx="3"/>
+<text x="458.88" y="353" fill="#9affdf" font-size="13" font-family="Arial, Helvetica, sans-serif" font-weight="400" text-anchor="start">10.36°</text>
+<text x="600.88" y="379" fill="#ffbd82" font-size="13" font-family="Arial, Helvetica, sans-serif" font-weight="400" text-anchor="start">28.11°</text>
+<line x1="45" y1="433" x2="979" y2="433" stroke="#233349" stroke-width="1"/>
+<text x="51" y="457" fill="#9aacbf" font-size="13" font-family="Arial, Helvetica, sans-serif" font-weight="400" text-anchor="start">Lower is better. Field magnitude alone is not a reliable replacement for XYZ + gravity.</text>
+</svg>

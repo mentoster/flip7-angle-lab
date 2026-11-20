@@ -1,0 +1,52 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1024" height="484" viewBox="0 0 1024 484" role="img" aria-label="Generalization to unseen phone orientations — Archive · 4,440 labeled rows · train on 5 orientations, test on 1">
+<rect x="0" y="0" width="1024" height="484" fill="#0c1625" rx="22"/>
+<rect x="36" y="31" width="7" height="48" fill="#44dfc3" rx="3"/>
+<text x="59" y="54" fill="#f0f5fc" font-size="25" font-family="Arial, Helvetica, sans-serif" font-weight="700" text-anchor="start">Generalization to unseen phone orientations</text>
+<text x="59" y="80" fill="#9db0c7" font-size="14" font-family="Arial, Helvetica, sans-serif" font-weight="400" text-anchor="start">Archive · 4,440 labeled rows · train on 5 orientations, test on 1</text>
+<rect x="727" y="87" width="17" height="7" fill="#45e0c3" rx="3"/>
+<text x="752" y="98" fill="#d2deee" font-size="13" font-family="Arial, Helvetica, sans-serif" font-weight="400" text-anchor="start">MAE</text>
+<rect x="814" y="87" width="17" height="7" fill="#ffb16b" rx="3"/>
+<text x="840" y="98" fill="#d2deee" font-size="13" font-family="Arial, Helvetica, sans-serif" font-weight="400" text-anchor="start">P90</text>
+<line x1="290" y1="119" x2="290" y2="430" stroke="#334155" stroke-width="1"/>
+<text x="290" y="448" fill="#93a6bc" font-size="13" font-family="Arial, Helvetica, sans-serif" font-weight="400" text-anchor="middle">0°</text>
+<line x1="418" y1="119" x2="418" y2="430" stroke="#334155" stroke-width="1"/>
+<text x="418" y="448" fill="#93a6bc" font-size="13" font-family="Arial, Helvetica, sans-serif" font-weight="400" text-anchor="middle">10°</text>
+<line x1="546" y1="119" x2="546" y2="430" stroke="#334155" stroke-width="1"/>
+<text x="546" y="448" fill="#93a6bc" font-size="13" font-family="Arial, Helvetica, sans-serif" font-weight="400" text-anchor="middle">20°</text>
+<line x1="674" y1="119" x2="674" y2="430" stroke="#334155" stroke-width="1"/>
+<text x="674" y="448" fill="#93a6bc" font-size="13" font-family="Arial, Helvetica, sans-serif" font-weight="400" text-anchor="middle">30°</text>
+<line x1="802" y1="119" x2="802" y2="430" stroke="#334155" stroke-width="1"/>
+<text x="802" y="448" fill="#93a6bc" font-size="13" font-family="Arial, Helvetica, sans-serif" font-weight="400" text-anchor="middle">40°</text>
+<text x="54" y="153" fill="#e2ecfa" font-size="16" font-family="Arial, Helvetica, sans-serif" font-weight="500" text-anchor="start">face down</text>
+<text x="54" y="172" fill="#8da2bc" font-size="12" font-family="Arial, Helvetica, sans-serif" font-weight="400" text-anchor="start">n=782</text>
+<rect x="290" y="137" width="192.5" height="13" fill="#45e0c3" rx="4"/>
+<rect x="290" y="155" width="444.8" height="10" fill="#ffb16b" rx="3"/>
+<text x="744.8" y="165" fill="#ffbe86" font-size="12" font-family="Arial, Helvetica, sans-serif" font-weight="400" text-anchor="start">34.75°</text>
+<text x="54" y="201" fill="#e2ecfa" font-size="16" font-family="Arial, Helvetica, sans-serif" font-weight="500" text-anchor="start">face up</text>
+<text x="54" y="220" fill="#8da2bc" font-size="12" font-family="Arial, Helvetica, sans-serif" font-weight="400" text-anchor="start">n=626</text>
+<rect x="290" y="185" width="62.6" height="13" fill="#45e0c3" rx="4"/>
+<rect x="290" y="203" width="147.1" height="10" fill="#ffb16b" rx="3"/>
+<text x="447.072" y="213" fill="#ffbe86" font-size="12" font-family="Arial, Helvetica, sans-serif" font-weight="400" text-anchor="start">11.49°</text>
+<text x="54" y="249" fill="#e2ecfa" font-size="16" font-family="Arial, Helvetica, sans-serif" font-weight="500" text-anchor="start">landscape left</text>
+<text x="54" y="268" fill="#8da2bc" font-size="12" font-family="Arial, Helvetica, sans-serif" font-weight="400" text-anchor="start">n=752</text>
+<rect x="290" y="233" width="160.8" height="13" fill="#45e0c3" rx="4"/>
+<rect x="290" y="251" width="404.6" height="10" fill="#ffb16b" rx="3"/>
+<text x="704.608" y="261" fill="#ffbe86" font-size="12" font-family="Arial, Helvetica, sans-serif" font-weight="400" text-anchor="start">31.61°</text>
+<text x="54" y="297" fill="#e2ecfa" font-size="16" font-family="Arial, Helvetica, sans-serif" font-weight="500" text-anchor="start">landscape right</text>
+<text x="54" y="316" fill="#8da2bc" font-size="12" font-family="Arial, Helvetica, sans-serif" font-weight="400" text-anchor="start">n=808</text>
+<rect x="290" y="281" width="202.4" height="13" fill="#45e0c3" rx="4"/>
+<rect x="290" y="299" width="518.7" height="10" fill="#ffb16b" rx="3"/>
+<text x="818.6560000000001" y="309" fill="#ffbe86" font-size="12" font-family="Arial, Helvetica, sans-serif" font-weight="400" text-anchor="start">40.52°</text>
+<text x="54" y="345" fill="#e2ecfa" font-size="16" font-family="Arial, Helvetica, sans-serif" font-weight="500" text-anchor="start">portrait</text>
+<text x="54" y="364" fill="#8da2bc" font-size="12" font-family="Arial, Helvetica, sans-serif" font-weight="400" text-anchor="start">n=909</text>
+<rect x="290" y="329" width="114.8" height="13" fill="#45e0c3" rx="4"/>
+<rect x="290" y="347" width="296.8" height="10" fill="#ffb16b" rx="3"/>
+<text x="596.8320000000001" y="357" fill="#ffbe86" font-size="12" font-family="Arial, Helvetica, sans-serif" font-weight="400" text-anchor="start">23.19°</text>
+<text x="54" y="393" fill="#e2ecfa" font-size="16" font-family="Arial, Helvetica, sans-serif" font-weight="500" text-anchor="start">portrait inverted</text>
+<text x="54" y="412" fill="#8da2bc" font-size="12" font-family="Arial, Helvetica, sans-serif" font-weight="400" text-anchor="start">n=563</text>
+<rect x="290" y="377" width="105.6" height="13" fill="#45e0c3" rx="4"/>
+<rect x="290" y="395" width="250.6" height="10" fill="#ffb16b" rx="3"/>
+<text x="550.624" y="405" fill="#ffbe86" font-size="12" font-family="Arial, Helvetica, sans-serif" font-weight="400" text-anchor="start">19.58°</text>
+<line x1="45" y1="433" x2="979" y2="433" stroke="#233349" stroke-width="1"/>
+<text x="51" y="457" fill="#9aacbf" font-size="13" font-family="Arial, Helvetica, sans-serif" font-weight="400" text-anchor="start">Errors are larger for landscape-right and face-down; this is one recording session.</text>
+</svg>

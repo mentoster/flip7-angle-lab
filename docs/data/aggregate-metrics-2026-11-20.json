@@ -1,0 +1,226 @@
+{
+  "metadata": {
+    "created": "2026-11-20",
+    "device": "Samsung Galaxy Z Flip7 (SM-F766B)",
+    "privacy": "Aggregated statistics only. No raw captures or private labels.",
+    "scope": "One device; snapshot of 1,500 recent calibration rows and 4,440 archived aggregates.",
+    "method": "Recent: three gravity-pose-group splits, retrained v2 recipe, not fixed APK weights. Archived: leave-one-orientation-out."
+  },
+  "recent": {
+    "rows": 1500,
+    "pose_cells": 43,
+    "holdout": {
+      "n": 1030,
+      "mae": 6.69,
+      "p50": 4.26,
+      "p75": 8.91,
+      "p90": 15.89,
+      "p95": 21.7,
+      "p99": 32.77,
+      "max": 38.72
+    },
+    "splits": [
+      {
+        "split": 1,
+        "n": 307,
+        "mae": 7.58,
+        "p90": 17.11,
+        "max": 37
+      },
+      {
+        "split": 2,
+        "n": 307,
+        "mae": 5.61,
+        "p90": 13.04,
+        "max": 38.72
+      },
+      {
+        "split": 3,
+        "n": 416,
+        "mae": 6.83,
+        "p90": 17.19,
+        "max": 35.79
+      }
+    ],
+    "angle_bins": [
+      {
+        "range": "0-20",
+        "n": 29,
+        "test_n": 4,
+        "mae": 1.95,
+        "p90": 3.11
+      },
+      {
+        "range": "20-40",
+        "n": 150,
+        "test_n": 123,
+        "mae": 1.69,
+        "p90": 3.61
+      },
+      {
+        "range": "40-60",
+        "n": 147,
+        "test_n": 122,
+        "mae": 2.59,
+        "p90": 5.27
+      },
+      {
+        "range": "60-80",
+        "n": 159,
+        "test_n": 112,
+        "mae": 7.04,
+        "p90": 17.32
+      },
+      {
+        "range": "80-100",
+        "n": 161,
+        "test_n": 93,
+        "mae": 11.17,
+        "p90": 21.74
+      },
+      {
+        "range": "100-120",
+        "n": 253,
+        "test_n": 173,
+        "mae": 7.92,
+        "p90": 16.12
+      },
+      {
+        "range": "120-140",
+        "n": 147,
+        "test_n": 90,
+        "mae": 9.02,
+        "p90": 20.21
+      },
+      {
+        "range": "140-160",
+        "n": 161,
+        "test_n": 104,
+        "mae": 10.87,
+        "p90": 29.06
+      },
+      {
+        "range": "160-180",
+        "n": 293,
+        "test_n": 209,
+        "mae": 5.84,
+        "p90": 12.67
+      }
+    ]
+  },
+  "archive": {
+    "rows": 4440,
+    "feature_ablation": [
+      {
+        "name": "Magnitude + coarse hinge",
+        "mae": 22.88,
+        "p90": 58.88,
+        "n": 4440
+      },
+      {
+        "name": "Magnitude + gravity relative",
+        "mae": 17.66,
+        "p90": 45.14,
+        "n": 4440
+      },
+      {
+        "name": "Full XYZ / gravity features",
+        "mae": 10.36,
+        "p90": 28.11,
+        "n": 4440
+      }
+    ],
+    "orientation_holdouts": [
+      {
+        "orientation": "face-down",
+        "n": 782,
+        "mae": 15.04,
+        "p90": 34.75
+      },
+      {
+        "orientation": "face-up",
+        "n": 626,
+        "mae": 4.89,
+        "p90": 11.49
+      },
+      {
+        "orientation": "landscape-left",
+        "n": 752,
+        "mae": 12.56,
+        "p90": 31.61
+      },
+      {
+        "orientation": "landscape-right",
+        "n": 808,
+        "mae": 15.81,
+        "p90": 40.52
+      },
+      {
+        "orientation": "portrait",
+        "n": 909,
+        "mae": 8.97,
+        "p90": 23.19
+      },
+      {
+        "orientation": "portrait-inverted",
+        "n": 563,
+        "mae": 8.25,
+        "p90": 19.58
+      }
+    ],
+    "magnetic_magnitude_near_open": {
+      "bins_uT": [
+        0,
+        50,
+        100,
+        150,
+        200,
+        250,
+        300,
+        350,
+        400,
+        450,
+        500,
+        550
+      ],
+      "archive": {
+        "n": 333,
+        "median_uT": 406.31,
+        "p05_uT": 352.7,
+        "p95_uT": 441.53,
+        "counts": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          3,
+          105,
+          225,
+          0,
+          0
+        ]
+      },
+      "recent": {
+        "n": 164,
+        "median_uT": 172,
+        "p05_uT": 141.31,
+        "p95_uT": 212.12,
+        "counts": [
+          0,
+          0,
+          49,
+          91,
+          24,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ]
+      }
+    }
+  }
+}

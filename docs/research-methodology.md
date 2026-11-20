@@ -55,6 +55,24 @@ ambiguous. **A held result is not a new physical measurement.**
 
 ## Data and evaluation
 
+### Published charts and aggregated data
+
+Five native SVG figures and a machine-readable
+[aggregate JSON snapshot](data/aggregate-metrics-2026-11-20.json)
+are part of the repository. All the visualized values are aggregated;
+the original training rows and identifiable device logs are not
+redistributed.
+
+![Error versus reference angle](charts/error-by-angle.svg)
+
+![Errors for each excluded physical orientation](charts/orientation-holdout.svg)
+
+![Feature ablation comparison](charts/feature-ablation.svg)
+
+![Magnetic magnitude domain shift](charts/magnetic-domain-shift.svg)
+
+![Training example counts by angle](charts/label-coverage.svg)
+
 Two internal datasets were used during development; the raw data is
 private and is **not** included in GitHub:
 
@@ -65,12 +83,48 @@ private and is **not** included in GitHub:
 
 ### Bundled Boost v2
 
-The v2 training script performed three gravity-pose-group holdouts on
-the recent 1,500-row device-local cache. Combined results across
-**1,414 validation predictions** were **MAE 7.17° and P90 16.11°**.
-The worst individual errors exceeded 50°. This is grouped testing
-within **one device**, not an independent capture-session benchmark
-or proof of Samsung-equivalent measurement.
+An earlier v2 training snapshot used three gravity-pose-group holdouts.
+Combined results across **1,414 validation predictions** were
+**MAE 7.17° and P90 16.11°**, with individual errors over 50°.
+
+The **updated snapshot used for the figures** includes 1,500 rows in
+43 quantized gravity-pose groups. Repeating the same training recipe
+(not re-evaluating the already bundled model weights) produced:
+
+| Split | Test predictions | MAE | P90 | Maximum error |
+| --- | ---: | ---: | ---: | ---: |
+| Gravity-group split 1 | 307 | 7.58° | 17.11° | 37.00° |
+| Gravity-group split 2 | 307 | 5.61° | 13.04° | 38.72° |
+| Gravity-group split 3 | 416 | 6.83° | 17.19° | 35.79° |
+| **Combined** | **1,030** | **6.69°** | **15.89°** | **38.72°** |
+
+Absolute-error percentiles were **P50 4.26°**, **P75 8.91°**,
+**P90 15.89°**, **P95 21.70°**, **P99 32.77°**. The same example
+may appear in multiple random test splits, so 1,030 is the number
+of tested predictions, not necessarily unique independent samples.
+All results remain single-device, within-session evaluations.
+
+| Samsung reference range | Cache labels | Tested predictions | MAE | P90 |
+| --- | ---: | ---: | ---: | ---: |
+| 0–20° | 29 | 4 | 1.95° | 3.11° |
+| 20–40° | 150 | 123 | 1.69° | 3.61° |
+| 40–60° | 147 | 122 | 2.59° | 5.27° |
+| 60–80° | 159 | 112 | 7.04° | 17.32° |
+| 80–100° | 161 | 93 | 11.17° | 21.74° |
+| 100–120° | 253 | 173 | 7.92° | 16.12° |
+| 120–140° | 147 | 90 | 9.02° | 20.21° |
+| 140–160° | 161 | 104 | 10.87° | 29.06° |
+| 160–180° (including 180°) | 293 | 209 | 5.84° | 12.67° |
+
+The 0–20° group has only four held-out predictions; its apparent
+low error must **not** be generalized.
+
+The JSON and figures freeze **one dated aggregate snapshot**. The
+private 1,500-row adaptive cache is updated as new trusted labels
+become available, so rerunning the benchmark later can give slightly
+different numbers. One subsequent live replay gave MAE 6.63° and
+P90 15.81° instead of the frozen 6.69° / 15.89°. Neither estimate
+is a cross-device, independent recording-session result.
 
 ### Rotation-related feature experiments
 
@@ -89,13 +143,28 @@ These numbers describe a **feature experiment**, not a comparison of
 separately deployed APK versions. Rotation-invariant magnitude alone
 performed considerably worse than the full pose-sensitive inputs.
 
+As a separate experiment, the 120-tree v2 training recipe was also
+evaluated on the archive by withholding each named orientation:
+
+| Excluded orientation | Predictions | MAE | P90 |
+| --- | ---: | ---: | ---: |
+| Face-down | 782 | 15.04° | 34.75° |
+| Face-up | 626 | 4.89° | 11.49° |
+| Landscape-left | 752 | 12.56° | 31.61° |
+| Landscape-right | 808 | 15.81° | 40.52° |
+| Portrait | 909 | 8.97° | 23.19° |
+| Inverted portrait | 563 | 8.25° | 19.58° |
+
 Cross-session domain shift was also substantial: when magnitude-only
 models were trained on the archived recording and evaluated on the
 newer cache, MAE was **37.03°**; in the opposite direction it was
-**40.31°**. The magnetic magnitude near a physically open hinge
-was roughly **352–442 µT** in the archive versus **153–215 µT**
-in recent calibration examples. A generic normalization or static
-offset does not reliably solve this shift.
+**40.31°**. At Samsung reference angles between 174° and 180°,
+the archived magnitude distribution had a **median 406.31 µT**
+(P05 352.70 / P95 441.53 µT, n=333); the new cache had
+**median 172.00 µT** (P05 141.31 / P95 212.12 µT, n=164).
+These are very different magnetic domains even near the same physical
+hinge angle. A generic normalization or static offset does not
+reliably resolve the shift.
 
 ## Reproduce from your own data
 
@@ -121,6 +190,29 @@ The legacy MLP research can also be reproduced using newly collected
 sensor and reference CSVs with
 `scripts/train-calibration-v2-mlp.py`. Neither script uploads sensor
 data by itself.
+
+To reproduce **aggregate statistics and the numbers behind the charts**
+from a consented local eight-column cache, without writing raw data:
+
+```bash
+uv run --with numpy --with scikit-learn \
+  python scripts/research-benchmarks.py < your-own-calibration.csv
+```
+
+For the six-orientation comparison, also pass a reference recording
+matching the legacy capture schema:
+
+```bash
+uv run --with numpy --with scikit-learn \
+  python scripts/research-benchmarks.py \
+  --archive-sensors captures/your-own-sensors.csv \
+  < your-own-calibration.csv
+```
+
+This prints aggregate JSON only. The publicly tracked
+`docs/data/aggregate-metrics-2026-11-20.json` is a reference
+snapshot to compare to, **not a substitute for the original private
+records**.
 
 For stronger independent validation, keep **entire sessions, complete
 fold/unfold cycles and individual devices** out of training.
