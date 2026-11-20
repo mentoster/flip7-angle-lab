@@ -1,0 +1,68 @@
+# Android Studio, Gradle, Kotlin and generated outputs
+.gradle/
+.kotlin/
+.idea/
+.vscode/
+*.iml
+**/build/
+local.properties
+.externalNativeBuild/
+.cxx/
+*.apk
+*.apks
+*.aab
+*.hprof
+
+# Large local captures: potentially sensitive physical-device telemetry.
+# Keep the documentation placeholder, but never commit historical CSVs by default.
+/captures/*
+!/captures/README.md
+*.csv
+*.tsv
+*.jsonl
+*.ndjson
+*.parquet
+*.sqlite
+*.sqlite3
+*.db
+
+# Private development-agent state, temporary QA captures and local screenshots
+/.hermes/
+/.devspace-tmp/
+*.log
+*.logcat
+*.trace
+*.prof
+*.profraw
+
+# Signing material and environment configuration
+.env
+.env.*
+!.env.example
+*.jks
+*.keystore
+*.p12
+*.pfx
+*.pem
+*.key
+*.asc
+*.mobileprovision
+*.pass
+*.password
+.secrets/
+
+# Python
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.venv/
+venv/
+
+# OS
+.DS_Store
+Thumbs.db
+*~
+*.swp
+*.swo
