@@ -1,0 +1,96 @@
+{
+  "formatVersion": "1.1",
+  "component": {
+    "group": "com.mentoster",
+    "module": "flip7-hinge-sdk",
+    "version": "0.1.0",
+    "attributes": {
+      "org.gradle.status": "release"
+    }
+  },
+  "createdBy": {
+    "gradle": {
+      "version": "9.8.2"
+    }
+  },
+  "variants": [
+    {
+      "name": "releaseVariantReleaseApiPublication",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.libraryelements": "aar",
+        "org.gradle.usage": "java-api"
+      },
+      "dependencies": [
+        {
+          "group": "org.jetbrains.kotlin",
+          "module": "kotlin-stdlib",
+          "version": {
+            "requires": "2.4.0"
+          }
+        }
+      ],
+      "files": [
+        {
+          "name": "flip7-hinge-sdk-0.1.0.aar",
+          "url": "flip7-hinge-sdk-0.1.0.aar",
+          "size": 82220,
+          "sha512": "eb8e830727923a56cacc5153efd17c9d672802a81b38255899bfa26334809d8cbfeeb72084625c56cca429ce13cec059ccd76f92192927db49f9cbf1f2a036db",
+          "sha256": "bfad0c1db1145bd6503c5ed85b293a21edb0696b22203ba961ad3be35e19a17c",
+          "sha1": "ef4497e82c95a1f6e1735e7bd53fc28b7816e044",
+          "md5": "7996bee0eb32953adba13565de45d3f4"
+        }
+      ]
+    },
+    {
+      "name": "releaseVariantReleaseRuntimePublication",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.libraryelements": "aar",
+        "org.gradle.usage": "java-runtime"
+      },
+      "dependencies": [
+        {
+          "group": "org.jetbrains.kotlin",
+          "module": "kotlin-stdlib",
+          "version": {
+            "requires": "2.4.0"
+          }
+        }
+      ],
+      "files": [
+        {
+          "name": "flip7-hinge-sdk-0.1.0.aar",
+          "url": "flip7-hinge-sdk-0.1.0.aar",
+          "size": 82220,
+          "sha512": "eb8e830727923a56cacc5153efd17c9d672802a81b38255899bfa26334809d8cbfeeb72084625c56cca429ce13cec059ccd76f92192927db49f9cbf1f2a036db",
+          "sha256": "bfad0c1db1145bd6503c5ed85b293a21edb0696b22203ba961ad3be35e19a17c",
+          "sha1": "ef4497e82c95a1f6e1735e7bd53fc28b7816e044",
+          "md5": "7996bee0eb32953adba13565de45d3f4"
+        }
+      ]
+    },
+    {
+      "name": "releaseVariantReleaseSourcePublication",
+      "attributes": {
+        "org.gradle.category": "documentation",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.docstype": "sources",
+        "org.gradle.usage": "java-runtime"
+      },
+      "files": [
+        {
+          "name": "flip7-hinge-sdk-0.1.0-sources.jar",
+          "url": "flip7-hinge-sdk-0.1.0-sources.jar",
+          "size": 15746,
+          "sha512": "2264aca6c95b72539f86f1505aeecf448848d725c9faf073f935a21ea2077c08f4708e9b6c7ad7e2dde15ff3d1a7669d48c4166d5c2413166725b25a69d0c9a3",
+          "sha256": "3852b037342b012bb6e88b72f1ebce5056b4b85e3f01bbc8ccfab8e0c9c71994",
+          "sha1": "901bc0e9ff4d21197f6395b64f4940b282a1913c",
+          "md5": "73f339e217eb87b6ab968a99c155cb1c"
+        }
+      ]
+    }
+  ]
+}
